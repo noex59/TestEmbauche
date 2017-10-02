@@ -1277,6 +1277,18 @@
     'type' => 'class',
     'override' => false,
   ),
+  'AvisController' => 
+  array (
+    'path' => '',
+    'type' => 'class',
+    'override' => false,
+  ),
+  'AvisControllerCore' => 
+  array (
+    'path' => 'controllers/front/AvisController.php',
+    'type' => 'class',
+    'override' => false,
+  ),
   'BestSalesController' => 
   array (
     'path' => '',

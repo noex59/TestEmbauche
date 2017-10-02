@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:2922359cd314ae82d83-17413711%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3048259d22094c3b586-88224867%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2922359cd314ae82d83-17413711',
+  'nocache_hash' => '3048259d22094c3b586-88224867',
   'variables' => 
   array (
     'products' => 0,
@@ -30,10 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59cd314b713e85_85637368',
+  'unifunc' => 'content_59d22095562933_27352139',
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59cd314b713e85_85637368')) {function content_59cd314b713e85_85637368($_smarty_tpl) {?><section class="featured-products clearfix">
+<?php if ($_valid && !is_callable('content_59d22095562933_27352139')) {function content_59d22095562933_27352139($_smarty_tpl) {?><section class="featured-products clearfix">
   <h1 class="h1 products-section-title text-uppercase">
     Produits populaires
   </h1>
@@ -90,7 +90,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         
                       <div class="variant-links">
-      <a href="http://localhost/tshirts/1-1-t-shirt-delave-manches-courtes.html#/1-taille-s/13-couleur-orange"
+      <a href="http://localhost/tshirts/1-3-t-shirt-delave-manches-courtes.html#/2-taille-m/13-couleur-orange"
        class="color"
        title="Orange"
        
@@ -166,7 +166,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
        title="Blanc"
        
        style="background-color: #ffffff"           ><span class="sr-only">Blanc</span></a>
-      <a href="http://localhost/blouses/2-7-chemisier.html#/1-taille-s/11-couleur-noir"
+      <a href="http://localhost/blouses/2-9-chemisier.html#/2-taille-m/11-couleur-noir"
        class="color"
        title="Noir"
        
@@ -298,7 +298,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         
                       <div class="variant-links">
-      <a href="http://localhost/evening-dresses/4-16-robe-imprimee.html#/1-taille-s/7-couleur-beige"
+      <a href="http://localhost/evening-dresses/4-17-robe-imprimee.html#/2-taille-m/7-couleur-beige"
        class="color"
        title="Beige"
        
@@ -390,7 +390,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
        title="Bleu"
        
        style="background-color: #5D9CEC"           ><span class="sr-only">Bleu</span></a>
-      <a href="http://localhost/summer-dresses/5-23-robe-ete-imprimee.html#/2-taille-m/16-couleur-jaune"
+      <a href="http://localhost/summer-dresses/5-19-robe-ete-imprimee.html#/1-taille-s/16-couleur-jaune"
        class="color"
        title="Jaune"
        
@@ -461,7 +461,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
        title="Blanc"
        
        style="background-color: #ffffff"           ><span class="sr-only">Blanc</span></a>
-      <a href="http://localhost/summer-dresses/6-31-robe-ete-imprimee.html#/1-taille-s/16-couleur-jaune"
+      <a href="http://localhost/summer-dresses/6-32-robe-ete-imprimee.html#/2-taille-m/16-couleur-jaune"
        class="color"
        title="Jaune"
        
@@ -538,7 +538,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
        title="Vert"
        
        style="background-color: #A0D468"           ><span class="sr-only">Vert</span></a>
-      <a href="http://localhost/summer-dresses/7-34-robe-mousseline-imprimee.html#/1-taille-s/16-couleur-jaune"
+      <a href="http://localhost/summer-dresses/7-35-robe-mousseline-imprimee.html#/2-taille-m/16-couleur-jaune"
        class="color"
        title="Jaune"
        

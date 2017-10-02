@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:249959cd314ba25a62-55841096%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2927859d22095a56cb7-48696374%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,17 +9,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '249959cd314ba25a62-55841096',
+  'nocache_hash' => '2927859d22095a56cb7-48696374',
   'variables' => 
   array (
     'cms_infos' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59cd314baedfd7_08121953',
+  'unifunc' => 'content_59d22095b78a13_18898205',
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59cd314baedfd7_08121953')) {function content_59cd314baedfd7_08121953($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59d22095b78a13_18898205')) {function content_59d22095b78a13_18898205($_smarty_tpl) {?>
 <div id="custom-text">
   <h3>Custom Text Block</h3>
 <p><strong class="dark">Lorem ipsum dolor sit amet conse ctetu</strong></p>
