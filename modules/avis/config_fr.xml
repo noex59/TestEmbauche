@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>avis</name>
+    <displayName><![CDATA[affiche un avis al&eacute;atoire]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Avec ce module r&eacute;alis&eacute; par un potentiel futur dev prestashop, vous allez
+                                            voir dans la page avis un avis affich&eacute; al&eacute;atoirement.]]></description>
+    <author><![CDATA[Fran&ccedil;ois]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

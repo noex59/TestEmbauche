@@ -3,13 +3,24 @@
 		Bien enregistré !
 		{else}
 			Quelque chose ne vas pas...
+
 	{/if}
 </p>
 
 <form method="post">
 	<label>Titre</label>
-	<input type="text" name="title">
+	<input
+        class="form-control"
+        name="titre"
+        placeholder="votre titre"
+    ></br>
 	<label>Contenu</label>
-	<input type="text" name="contenu">
+	<textarea
+	    class="form-control"
+	    name="contenu"
+	    placeholder="votre commentaire"
+	    rows="3"
+	>
+    </textarea></br>
 	<input type="submit" value="Enregistrer">
 </form>
