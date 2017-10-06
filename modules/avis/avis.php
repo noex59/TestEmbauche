@@ -97,23 +97,26 @@
             return true;
         }*/
 
-        /*public function getContent(){
-            $status = false;
-            $titre = Tools::getValue(key:'title');
-            $contenu = Tools::getValue(key:'contenu');
+        public function getAvis()
+        {
+            $query = "SELECT titre, contenu, dateAjout, dateUpdate FROM ps_avis";
+            $res = Db::getInstance()->ExecuteS($query);
+            return $res;
+        }
 
-            if(ConfigurationCore::updateValue(key:'', $title))
-                $status = true;
+        public function getContent(){
+            $status = false;
 
             $this->context->smarty->assign(array(
                 'submit_form' => true,
-                'status' => $status 
+                'status' => $status,
+                'contenuAvis' => $this->getAvis()
             ));
 
             return $this->display(__FILE__, 'views/templates/admin/avis.tpl');
-        }*/
+        }
 
-        public function getContent()
+        /*public function getContent()
         {
             $output = null;
 
@@ -198,6 +201,6 @@
             $helper->fields_value['MYMODULE_NAME'] = Configuration::get('MYMODULE_NAME');
 
             return $helper->generateForm($fields_form);
-        }
+        }*/
     }
 ?>
