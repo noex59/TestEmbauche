@@ -1,5 +1,7 @@
-<h3>Votre avis compte</h3>
-<h6>Voici un avis tiré au hasard :</h6>
+{extends file='page.tpl'}
+{block name='page_content_container'}
 
-<p>{$titre}</p>
-<p>{$contenu}</p>
+<h3>Votre avis compte</h3>
+<h6>En voici un exemple au hasard :</h6>
+
+{/block}

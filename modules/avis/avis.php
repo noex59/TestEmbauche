@@ -9,7 +9,7 @@
             $this->name = 'avis';
             $this->tab = 'front_office_features';
             $this->version = '1.0.0';
-            $this->controllers = array('AdminDesAvisController');
+            $this->controllers = array('AvisFront');
             $this->author = 'François';
             $this->need_instance = 0;
             $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
@@ -48,37 +48,12 @@
               );
               return $this->display(__FILE__, 'views/templates/admin/avis.tpl');
         }
-/*
-        public function install()
-        {
-            if (Shop::isFeatureActive())
-                Shop::setContext(Shop::CONTEXT_ALL);
-
-            if (!parent::install() ||
-                !$this->registerHook('leftColumn') ||
-                !$this->registerHook('header') ||
-                !Configuration::updateValue('Avis', 'my friend')
-            )
-            return false;
-
-            return true;
-        }*/
 
         public function uninstall(){
-            return /*$this->uninstallModuleTab() &&*/ parent::uninstall();
+            return parent::uninstall();
         }
 
-        /*public function uninstall()
-        {
-              if (!parent::uninstall() ||
-                !Configuration::deleteByName('Avis')
-              )
-                return false;
-
-              return true;
-        }*/
-
-        public function installModuleTab(){
+        /*public function installModuleTab(){
             $tab = new Tab();
             $langs = language::getLanguages();
             foreach ($langs as $lang) 
@@ -96,7 +71,7 @@
                 return $tab->delete();
             }
             return true;
-        }
+        }*/
 
         public function insertAvis()
         {
@@ -107,13 +82,6 @@
             '".$currentDay."')";
             $test2 = Db::getInstance()->execute($sql);
         }
-
-        /*public function updateAvis()
-        {
-            $query = "UPDATE ps_avis SET titre = ".Tools::getValue('titre').", contenu =".Tools::getValue('contenu').", dateUpdate = ".date('Y-m-d H:i:s', time());
-            $res = Db::getInstance()->ExecuteS($query);
-            return $res;
-        }*/
 
         public function updateAvis($id)
         {
@@ -185,92 +153,5 @@
 
             return $this->display(__FILE__, 'views/templates/admin/avis.tpl');
         }
-
-        /*public function getContent()
-        {
-            $output = null;
-
-            if (Tools::isSubmit('submit'.$this->name))
-            {
-                $my_module_name = strval(Tools::getValue('MYMODULE_NAME'));
-                if (!$my_module_name
-                  || empty($my_module_name)
-                  || !Validate::isGenericName($my_module_name))
-                    $output .= $this->displayError($this->l('Invalid Configuration value'));
-                else
-                {
-                    Configuration::updateValue('MYMODULE_NAME', $my_module_name);
-                    $output .= $this->displayConfirmation($this->l('Settings updated'));
-                }
-            }
-            return $output.$this->displayForm();
-        }
-
-        public function displayForm()
-        {
-            // Get default language
-            $default_lang = (int)Configuration::get('PS_LANG_DEFAULT');
-
-            // Init Fields form array
-            $fields_form[0]['form'] = array(
-                'legend' => array(
-                    'title' => $this->l('Ajouter un avis'),
-                ),
-                'input' => array(
-                    array(
-                        'type' => 'text',
-                        'label' => 'titre',
-                        'name' => 'MYMODULE_NAME',
-                        'size' => 20,
-                        'required' => true
-                    ),
-                    array(
-                        'type' => 'textarea',
-                        'label' => 'contenu',
-                        'name' => 'MYMODULE_NAME',
-                        'required' => true
-                    )
-                ),
-                'submit' => array(
-                    'title' => 'Enregistrer',
-                    'class' => 'btn btn-default pull-right'
-                )
-            );
-
-            $helper = new HelperForm();
-
-            // Module, token and currentIndex
-            $helper->module = $this;
-            $helper->name_controller = $this->name;
-            $helper->token = Tools::getAdminTokenLite('AdminModules');
-            $helper->currentIndex = AdminController::$currentIndex.'&configure='.$this->name;
-
-            // Language
-            $helper->default_form_language = $default_lang;
-            $helper->allow_employee_form_lang = $default_lang;
-
-            // Title and toolbar
-            $helper->title = $this->displayName;
-            $helper->show_toolbar = true;        // false -> remove toolbar
-            $helper->toolbar_scroll = true;      // yes - > Toolbar is always visible on the top of the screen.
-            $helper->submit_action = 'submit'.$this->name;
-            $helper->toolbar_btn = array(
-                'save' =>
-                array(
-                    'desc' => $this->l('Save'),
-                    'href' => AdminController::$currentIndex.'&configure='.$this->name.'&save'.$this->name.
-                    '&token='.Tools::getAdminTokenLite('AdminModules'),
-                ),
-                'back' => array(
-                    'href' => AdminController::$currentIndex.'&token='.Tools::getAdminTokenLite('AdminModules'),
-                    'desc' => $this->l('Back to list')
-                )
-            );
-
-            // Load current value
-            $helper->fields_value['MYMODULE_NAME'] = Configuration::get('MYMODULE_NAME');
-
-            return $helper->generateForm($fields_form);
-        }*/
     }
 ?>
