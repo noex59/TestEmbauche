@@ -13,7 +13,7 @@
         {
             $query = "SELECT id FROM ps_avis ORDER BY RAND() LIMIT 1";
             $res = Db::getInstance()->ExecuteS($query);
-            var_dump($res[0]['id']);
+            //var_dump($res[0]['id']);
             return $res[0]['id'];
         }
 
